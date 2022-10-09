@@ -1,0 +1,15 @@
+export { default as Instagram } from "./instagram-icon.svg";
+export { default as Linkedin } from "./linkedin-icon.svg";
+export { default as Github } from "./github-icon.svg";
+export { default as Twitter } from "./twitter-icon.svg";
+export { default as Collaborations } from "./collaborations.svg";
+export { default as ProblemSolving } from "./collaborations.svg";
+export { default as TimeManagement } from "./time-management.svg";
+export { default as Laptop } from "./Laptop.svg";
+export { default as Reactjs } from "./reactjs-icon.svg";
+export { default as Nodejs } from "./nodejs-icon.svg";
+export { default as Expressjs } from "./expressjs-icon.svg";
+export { default as MongoDB } from "./mongodb-logo.svg";
+export { default as MongoWithText } from "./mongo-with-text.svg";
+export { default as Nextjs } from "./nextjs-icon.svg";
+export { default as Golang } from "./golang-icon.svg";

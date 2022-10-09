@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
+
+* {
+  font-family: "Poppins";
+}
+
+.app {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  flex-wrap: wrap;
+}
+
+.icon-shape {
+  width: 57px;
+  height: 57px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 30px rgb(0 0 0 / 0.2);
+}
+
+.skill-wrapper {
+  width: 372px;
+  height: auto;
+}
+
+.desk-wrapper {
+  width: 372px;
+  height: auto;
+  padding: 20px;
+  font-weight: 600;
+}
+.skill-ilustrations {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-center {
+  text-align: center;
+}
+
+.content-right {
+  text-align: right;
+}
+
+.projects-card {
+  width: 318px;
+  height: 385px;
+  border-radius: 16px 16px 0 0;
+  overflow-y: hidden;
+  box-shadow: 0 4px 30px #00000014;
+  flex: 0 0 24.242424%;
+}
+.projects-card p {
+  line-height: normal;
+  font-size: 13px;
+}
+.projects-card a {
+  color: #007ae9;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.project-image-box {
+  width: 100%;
+  height: 168px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right, #bcd1ff, #89aeff);
+}
+
+.content-project {
+  width: 100%;
+  max-width: 90%;
+  height: auto;
+  margin-left: 17px;
+  line-height: 1rem;
+}
+
+.tech-stack-label {
+  width: 128px;
+  background-color: #ebeaea;
+  border-radius: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
+  padding: 5px;
+}
+
+.tech-stack {
+  width: 150px;
+  height: 59px;
+  display: flex;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: 600;
+  align-items: center;
+  gap: 11px;
+  border-radius: 10px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.118);
+}
