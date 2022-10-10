@@ -164,6 +164,11 @@
   position: absolute;
 }
 
+.tech-stack img {
+  width: 35px;
+  height: 35px;
+}
+
 .next-js {
   top: 18%;
   left: -5%;
@@ -192,24 +197,12 @@
 @keyframes tech-stack {
   0% {
     transform: translateY(0);
-    -webkit-transform: translateY(0);
-    -moz-transform: translateY(0);
-    -ms-transform: translateY(0);
-    -o-transform: translateY(0);
   }
   50% {
     transform: translateY(-25%);
-    -webkit-transform: translateY(-25%);
-    -moz-transform: translateY(-25%);
-    -ms-transform: translateY(-25%);
-    -o-transform: translateY(-25%);
   }
   100% {
     transform: translateY(0);
-    -webkit-transform: translateY(0);
-    -moz-transform: translateY(0);
-    -ms-transform: translateY(0);
-    -o-transform: translateY(0);
   }
 }
 
@@ -573,7 +566,7 @@
   color: #262626;
 }
 
-@media only screen and (max-width: 900px) {
+@media screen and (max-width: 640px) {
   .navbar {
     /* padding: 0.5rem 1rem 0.5rem 1rem; */
     width: 100%;
@@ -600,18 +593,18 @@
 
   .hero {
     width: 100%;
-    max-width: fit-content;
-    height: auto;
+    max-width: 390pt;
+    border: 15px;
+    padding: 1rem;
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 5rem;
-    padding: 0pt;
+    gap: 2rem;
   }
 
   .identity {
-    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -624,11 +617,11 @@
   }
 
   .job-desk h1 {
-    font-size: 34px;
+    font-size: 34pt;
   }
 
   .job-desk span {
-    font-size: 26px;
+    font-size: 26pt;
   }
 
   .button-wrapper {
@@ -637,17 +630,58 @@
     justify-content: center;
   }
 
-  .main-layouts {
-    padding: 1rem;
-    max-width: 400px;
-    height: auto;
-  }
-
-  .tech-stack-box {
-    display: none;
-  }
-
   .skill-image-box img {
-    max-width: 20rem;
+    max-width: 100%;
+  }
+
+  .skill-image-box {
+    box-sizing: border-box;
+    padding: 1rem;
+  }
+
+  .tech-stack {
+    width: 120px;
+    height: 59px;
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 600;
+    align-items: center;
+    gap: 7px;
+    border-radius: 10px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.118);
+    background-color: white;
+    z-index: 40;
+    position: absolute;
+  }
+
+  .tech-stack img {
+    width: 25px;
+    height: 25px;
+  }
+
+  .next-js {
+    top: 18%;
+    left: 0;
+    animation: tech-stack 5s linear infinite;
+    -webkit-animation: tech-stack 4s linear infinite;
+  }
+  .mongodb {
+    bottom: 18%;
+    left: 0;
+    animation: tech-stack 3s linear infinite;
+    -webkit-animation: tech-stack 3s linear infinite;
+  }
+  .node-js {
+    top: 26%;
+    right: 0;
+    animation: tech-stack 7s linear infinite;
+    -webkit-animation: tech-stack 7s linear infinite;
+  }
+  .golang {
+    bottom: 3%;
+    right: 0;
+    animation: tech-stack 5s linear infinite;
+    -webkit-animation: tech-stack 2s linear infinite;
   }
 }
