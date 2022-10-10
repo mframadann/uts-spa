@@ -1,5 +1,12 @@
-import React from "react";
-import { Hero, Navbar } from "../components";
+import {
+  AboutSection,
+  ContackSection,
+  Footer,
+  Hero,
+  Navbar,
+  ProjectSection,
+  SkillSection,
+} from "../components";
 import { MainLayout } from "../layouts";
 
 const MainPage = () => {
@@ -8,6 +15,11 @@ const MainPage = () => {
       <Navbar />
       <MainLayout>
         <Hero />
+        <AboutSection />
+        <SkillSection />
+        <ProjectSection />
+        <ContackSection />
+        <Footer />
       </MainLayout>
     </>
   );

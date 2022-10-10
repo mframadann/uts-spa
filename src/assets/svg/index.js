@@ -16,3 +16,4 @@ export { default as Golang } from "./golang-icon.svg";
 export { default as Logo } from "./LogoRamadan.svg";
 export { default as HeroImage } from "./Hero.svg";
 export { default as DownloadCv } from "./download-cv-icons.svg";
+export { default as AboutIlustration } from "./about-ilustration.svg";
