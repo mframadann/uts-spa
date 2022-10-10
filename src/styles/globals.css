@@ -30,7 +30,7 @@
 }
 
 .skill-wrapper {
-  width: 372px;
+  width: 100%;
   height: auto;
 }
 
@@ -44,6 +44,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
 }
 
 .content-center {
@@ -212,9 +213,7 @@
   width: 100%;
   top: 0;
   position: fixed;
-  /* margin-bottom: 198px; */
   background-color: white;
-  box-shadow: 0 2px 60px rgba(0, 0, 0, 0.099);
   z-index: 50;
 }
 
@@ -237,7 +236,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 44px;
+  gap: 35px;
   text-decoration: none;
   font-weight: 600;
   color: black;
@@ -617,11 +616,11 @@
   }
 
   .job-desk h1 {
-    font-size: 34pt;
+    font-size: 28pt;
   }
 
   .job-desk span {
-    font-size: 26pt;
+    font-size: 22pt;
   }
 
   .button-wrapper {
@@ -664,24 +663,81 @@
     top: 18%;
     left: 0;
     animation: tech-stack 5s linear infinite;
-    -webkit-animation: tech-stack 4s linear infinite;
   }
   .mongodb {
     bottom: 18%;
     left: 0;
     animation: tech-stack 3s linear infinite;
-    -webkit-animation: tech-stack 3s linear infinite;
   }
   .node-js {
     top: 26%;
     right: 0;
     animation: tech-stack 7s linear infinite;
-    -webkit-animation: tech-stack 7s linear infinite;
   }
   .golang {
     bottom: 3%;
     right: 0;
     animation: tech-stack 5s linear infinite;
-    -webkit-animation: tech-stack 2s linear infinite;
+  }
+
+  /* about */
+  .about-contain {
+    height: auto;
+    box-sizing: border-box;
+    padding: 2.5rem;
+  }
+
+  .about-wrapper {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-ilustrations img {
+    width: 100%;
+    max-width: fit-content;
+  }
+
+  .skills-contain {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    flex-direction: column;
+    box-sizing: border-box;
+  }
+
+  .skill-wrap {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    max-width: fit-content;
+    flex-direction: column;
+    text-align: center;
+    gap: 2.5rem;
+  }
+
+  .skill-ilustrations img {
+    width: 100%;
+    max-width: 250px;
+  }
+
+  .desk-wrapper {
+    width: 100%;
+    max-width: 80%;
+    margin: auto;
+    height: auto;
+    font-weight: 600;
+  }
+
+  .content-right {
+    text-align: center;
   }
 }

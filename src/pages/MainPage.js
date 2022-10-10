@@ -15,11 +15,11 @@ const MainPage = () => {
       <Navbar />
       <MainLayout>
         <Hero />
-        {/* <AboutSection />
+        <AboutSection />
         <SkillSection />
-        <ProjectSection />
-        <ContackSection />
-        <Footer /> */}
+        {/* <ProjectSection />
+        <ContackSection /> */}
+        {/* <Footer /> */}
       </MainLayout>
     </>
   );
