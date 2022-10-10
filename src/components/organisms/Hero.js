@@ -3,7 +3,7 @@ import {
   DownloadCv,
   Golang,
   HeroImage,
-  MongoWithText,
+  MongoDB,
   Nextjs,
   Nodejs,
 } from "../../assets/svg";
@@ -19,11 +19,11 @@ const Hero = () => {
       image: Nextjs,
     },
     {
-      title: "Mongo DB",
-      isIcon: true,
+      title: "MongoDB",
+      isIcon: false,
       alt: "mongodb",
       position: "mongodb",
-      image: MongoWithText,
+      image: MongoDB,
     },
     {
       title: "Node.js",
