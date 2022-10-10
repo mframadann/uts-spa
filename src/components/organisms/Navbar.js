@@ -1,9 +1,10 @@
 import { useState } from "react";
-import { Logo } from "../../assets/svg";
-import { NavItemDekstop } from "../moleculs";
+import { Hamburger, Logo } from "../../assets/svg";
+import { NavItemDekstop, NavItemMobile } from "../moleculs";
 
 const Navbar = () => {
   const [isActive, setIsActive] = useState("#home");
+  const [toggle, setToggle] = useState(false);
 
   const items = [
     {
@@ -29,16 +30,26 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="navbar">
-      <div className="nav-menu-wrapper">
-        <img src={Logo} alt="muhamad-firly-ramadan" />
-        <NavItemDekstop
-          items={items}
-          isActive={isActive}
-          setIsActive={setIsActive}
-        />
-      </div>
-    </nav>
+    <>
+      <nav className="navbar">
+        <div className="nav-menu-wrapper">
+          <img src={Logo} alt="muhamad-firly-ramadan" />
+          <img
+            src={Hamburger}
+            width="30"
+            height="30"
+            alt="hamburger-menu"
+            onClick={() => setToggle(!toggle)}
+          />
+          <NavItemDekstop
+            items={items}
+            isActive={isActive}
+            setIsActive={setIsActive}
+          />
+        </div>
+      </nav>
+      <NavItemMobile toggle={toggle} setToggle={setToggle} items={items} />
+    </>
   );
 };
 
