@@ -17,3 +17,5 @@ export { default as Logo } from "./LogoRamadan.svg";
 export { default as HeroImage } from "./Hero.svg";
 export { default as DownloadCv } from "./download-cv-icons.svg";
 export { default as AboutIlustration } from "./about-ilustration.svg";
+export { default as Hamburger } from "./bars-solid.svg";
+export { default as CloseMenu } from "./xmark-solid.svg";
