@@ -689,13 +689,14 @@
 
   .about-wrapper {
     width: 100%;
-    height: auto;
+    height: 850px;
     display: flex;
     align-items: center;
     justify-content: center;
     box-sizing: border-box;
     flex-direction: column;
     text-align: center;
+    gap: 3.5rem;
   }
 
   .about-ilustrations img {
@@ -739,5 +740,25 @@
 
   .content-right {
     text-align: center;
+  }
+
+  /* project */
+
+  .projects-contain {
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+
+  .projects-card {
+    width: 100%;
+    max-width: fit-content;
+    flex: none;
   }
 }

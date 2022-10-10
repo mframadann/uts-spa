@@ -17,8 +17,8 @@ const MainPage = () => {
         <Hero />
         <AboutSection />
         <SkillSection />
-        {/* <ProjectSection />
-        <ContackSection /> */}
+        <ProjectSection />
+        {/* <ContackSection /> */}
         {/* <Footer /> */}
       </MainLayout>
     </>
