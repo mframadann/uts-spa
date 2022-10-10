@@ -1,7 +1,7 @@
 const CardTechStack = (props) => {
-  const { isIcon, images, title, alt } = props;
+  const { isIcon, images, title, alt, position } = props;
   return (
-    <div className="tech-stack">
+    <div className={`${position} tech-stack`}>
       {isIcon ? (
         <>
           <img src={images} alt={alt} />

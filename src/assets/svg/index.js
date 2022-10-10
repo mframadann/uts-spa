@@ -13,3 +13,6 @@ export { default as MongoDB } from "./mongodb-logo.svg";
 export { default as MongoWithText } from "./mongo-with-text.svg";
 export { default as Nextjs } from "./nextjs-icon.svg";
 export { default as Golang } from "./golang-icon.svg";
+export { default as Logo } from "./LogoRamadan.svg";
+export { default as HeroImage } from "./Hero.svg";
+export { default as DownloadCv } from "./download-cv-icons.svg";
