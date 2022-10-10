@@ -573,7 +573,7 @@
   color: #262626;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 900px) {
   .navbar {
     /* padding: 0.5rem 1rem 0.5rem 1rem; */
     width: 100%;
@@ -600,6 +600,7 @@
 
   .hero {
     width: 100%;
+    max-width: fit-content;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -634,5 +635,19 @@
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+
+  .main-layouts {
+    padding: 1rem;
+    max-width: 400px;
+    height: auto;
+  }
+
+  .tech-stack-box {
+    display: none;
+  }
+
+  .skill-image-box img {
+    max-width: 20rem;
   }
 }

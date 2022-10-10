@@ -65,16 +65,18 @@ const Hero = () => {
         </div>
       </div>
       <div className="skill-image-box">
-        {TechstackData?.map((item, i) => (
-          <TechStack
-            isIcon={item.isIcon}
-            images={item.image}
-            alt={item.alt}
-            title={item.title}
-            position={item.position}
-            key={i}
-          />
-        ))}
+        <div className="tech-stack-box">
+          {TechstackData?.map((item, i) => (
+            <TechStack
+              isIcon={item.isIcon}
+              images={item.image}
+              alt={item.alt}
+              title={item.title}
+              position={item.position}
+              key={i}
+            />
+          ))}
+        </div>
         <img src={HeroImage} alt="logo" />
       </div>
     </section>
