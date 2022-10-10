@@ -461,7 +461,7 @@
 }
 
 .send-message {
-  width: 247px;
+  width: 30%;
   height: 57px;
   font-size: 20px;
   margin-top: 2rem;
@@ -760,5 +760,42 @@
     width: 100%;
     max-width: fit-content;
     flex: none;
+  }
+
+  .contack-section {
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    padding: 1rem;
+  }
+
+  .contack-section h1 {
+    font-size: 30pt;
+  }
+
+  .contack-wrapper {
+    width: 100%;
+  }
+
+  .identity-section {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-direction: column;
+  }
+
+  .send-message {
+    width: 100%;
+  }
+
+  .message-section textarea {
+    height: 200px;
+  }
+
+  .identity-section input,
+  .message-section textarea {
+    width: 300px;
   }
 }
