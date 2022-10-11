@@ -367,7 +367,7 @@
   align-items: center;
   justify-content: center;
   margin-top: 290px;
-  margin: auto;
+  /* margin: auto; */
 }
 
 .about-wrapper {
@@ -375,7 +375,8 @@
   max-width: 72rem;
   margin: auto;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  gap: 20rem;
   align-items: center;
 }
 
@@ -388,6 +389,7 @@
   max-width: 560px;
   height: 220px;
   padding: 0.5rem;
+  margin: auto;
   font-weight: 400;
 }
 .about-description h1 {
@@ -872,6 +874,10 @@
     justify-content: flex-start;
   }
 
+  /* .text-footer-image-box {
+    display: none;
+  } */
+
   .right-side-footer-content {
     display: flex;
     justify-content: flex-start;
@@ -895,7 +901,7 @@
   }
 
   .footer-image-wrapper img {
-    width: 100%;
+    width: 60%;
   }
 
   .footer-text-watermark h3 {
