@@ -1,5 +1,7 @@
+import { ArrowRight, Encrypted } from "../../assets/svg";
+
 const CardProjects = (props) => {
-  const { image, alt, icons, link, title } = props;
+  const { image, alt, icons, link, title, description } = props;
   return (
     <div className="projects-card">
       <div className="project-image-box">
@@ -14,11 +16,17 @@ const CardProjects = (props) => {
             <img src={icon.name} alt={icon.alt} key={i} />
           ))}
         </div>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores,
-          deserunt provident! Quisquam ratione necessitatibus earum?
-        </p>
-        <a href={link}>View project 🡢</a>
+        <p>{description}</p>
+        {link == "private" ? (
+          <a href="#projects">
+            Private project <img src={Encrypted} alt="private-image" />
+          </a>
+        ) : (
+          <a href={link} target="_blank">
+            View project
+            <img src={ArrowRight} alt="see" />
+          </a>
+        )}
       </div>
     </div>
   );
