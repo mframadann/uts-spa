@@ -19,3 +19,6 @@ export { default as DownloadCv } from "./download-cv-icons.svg";
 export { default as AboutIlustration } from "./about-ilustration.svg";
 export { default as Hamburger } from "./bars-solid.svg";
 export { default as CloseMenu } from "./xmark-solid.svg";
+export { default as FooterBanner } from "./footer-banner.svg";
+export { default as EmailIcon } from "./email-icon.svg";
+export { default as SiteIcon } from "./site-icon.svg";

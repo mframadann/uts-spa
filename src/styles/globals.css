@@ -13,20 +13,15 @@
   --brand-ternary: #6892fe94;
 }
 
-/* body {
-  height: 4936px;
-  position: relative;
-} */
-
 .icon-shape {
-  width: 57px;
-  height: 57px;
+  width: 38.3px;
+  height: 38.3px;
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: white;
-  box-shadow: 0 4px 30px rgb(0 0 0 / 0.2);
+  box-shadow: 0 4px 50px rgb(0 0 0 / 0.2);
 }
 
 .skill-wrapper {
@@ -45,6 +40,7 @@
   justify-content: center;
   align-items: center;
   width: 100%;
+  max-width: fit-content;
 }
 
 .content-center {
@@ -57,13 +53,14 @@
 
 .skills-contain {
   width: 100%;
-  max-width: 72rem;
+  max-width: 75rem;
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: center;
-  margin: 221px auto 0 auto;
+  margin: auto;
   gap: 6rem;
+  margin-top: 200pt;
 }
 
 .skills-contain h1 {
@@ -72,7 +69,11 @@
 
 .skill-wrap {
   width: 100%;
+  max-width: 72rem;
+  margin: auto;
   display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .projects-card {
@@ -357,6 +358,7 @@
   align-items: center;
   justify-content: center;
   margin-top: 290px;
+  margin: auto;
 }
 
 .about-wrapper {
@@ -364,7 +366,7 @@
   max-width: 72rem;
   margin: auto;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
 
@@ -480,28 +482,62 @@
 
 .footer {
   width: 100%;
-  height: 230px;
-  background-color: #d9ddf6;
+  height: 357px;
+  background-color: #f0f0f0;
   bottom: 0;
-  margin-top: 7rem;
+  margin-top: 25rem;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 1.5rem 0 2.6rem 0;
+  gap: 1rem;
+}
+
+.right-side-footer-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: flex-end;
+  text-align: right;
+}
+
+.footer-information-box {
+  font-size: 15px;
+  text-align: right;
+  justify-content: right;
+}
+
+.footer-information-box p {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5rem;
 }
 
 .footer-social-media-wrapper {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 1.5rem;
+  gap: 0.5rem;
+  box-sizing: border-box;
+  padding-top: 3.7rem;
+}
+
+.footer-text-watermark {
+  color: rgba(0, 0, 0, 0.521);
+}
+
+.text-footer-image-box {
+  width: 455px;
+  font-size: 15px;
+  box-sizing: border-box;
+  font-weight: 600;
 }
 
 .wrapper-footer-content {
+  width: 100%;
+  max-width: 72rem;
+  height: 100%;
+  margin: auto;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  text-align: center;
+  justify-content: space-between;
   gap: 1rem;
   font-size: 20px;
 }
@@ -684,6 +720,7 @@
     height: auto;
     box-sizing: border-box;
     padding: 2.5rem;
+    margin-top: 25rem;
   }
 
   .about-wrapper {
@@ -724,9 +761,16 @@
     gap: 2.5rem;
   }
 
+  .skill-ilustrations {
+    width: 100%;
+    max-width: 250px;
+    margin: auto;
+  }
+
   .skill-ilustrations img {
     width: 100%;
     max-width: 250px;
+    margin: auto;
   }
 
   .desk-wrapper {
@@ -796,5 +840,54 @@
   .identity-section input,
   .message-section textarea {
     width: 300px;
+  }
+
+  .footer {
+    box-sizing: border-box;
+    padding: 2rem 1rem 1rem 1rem;
+    height: auto;
+    display: flex;
+    gap: 3rem;
+  }
+  .wrapper-footer-content {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .right-side-footer-content {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .footer-social-media-wrapper {
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-top: 1rem;
+  }
+
+  .footer-information-box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-top: 0.5rem;
+  }
+
+  .footer-image-wrapper img {
+    width: 100%;
+  }
+
+  .footer-text-watermark h3 {
+    font-size: 12px;
+  }
+
+  .text-footer-image-box {
+    font-size: 12px;
+    width: 100%;
   }
 }
