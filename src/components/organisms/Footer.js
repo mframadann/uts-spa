@@ -25,10 +25,26 @@ const Footer = () => {
         </div>
         <div className="right-side-footer-content">
           <div className="footer-social-media-wrapper">
-            <SocialMedia dataIcon={Instagram} alt="instagram" />
-            <SocialMedia dataIcon={Github} alt="Github" />
-            <SocialMedia dataIcon={Linkedin} alt="Linkedin" />
-            <SocialMedia dataIcon={Twitter} alt="Twitter" />
+            <SocialMedia
+              dataIcon={Instagram}
+              alt="instagram"
+              link="https://instagram.com/mframadann"
+            />
+            <SocialMedia
+              dataIcon={Github}
+              alt="Github"
+              link="https://github.com/Ramadandev"
+            />
+            <SocialMedia
+              dataIcon={Linkedin}
+              alt="Linkedin"
+              link="https://www.linkedin.com/in/muhamad-firly-ramadan-255b1b20a/"
+            />
+            <SocialMedia
+              dataIcon={Twitter}
+              alt="Twitter"
+              link="https://twitter.com/mframadann"
+            />
           </div>
           <div className="footer-information-box">
             <p>

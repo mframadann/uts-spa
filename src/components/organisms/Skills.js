@@ -14,18 +14,18 @@ const Skills = () => {
         <SkillsItems
           images={Collaborations}
           title="Collaborations"
-          description="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime, iusto!   "
+          description="I have 10 month collaboration experience in alphadev and 5 month in PT.Litedex digital indonesia"
         />
         <SkillsItems
           images={TimeManagement}
           title="Time Management"
-          description="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime, iusto!   "
+          description="As a developer of course I can manage my time well. either in terms of work or personal affairs."
           align="content-center"
         />
         <SkillsItems
           images={ProblemSolving}
           title="Problem Solving"
-          description="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime, iusto!"
+          description="As a back end developer, I have a pretty good problem solving in overcoming bugs, errors or flow from the application/web that I build"
           align="content-right"
         />
       </div>
