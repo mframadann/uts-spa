@@ -19,8 +19,19 @@ const NavItemMobile = (props) => {
       <div className="links-wrap">
         <ul>
           {items?.map((item, i) => (
-            <li className="nav-mmenu-mobile" key={i}>
-              <a href={item.path}>{item.name}</a>
+            <li
+              className="nav-mmenu-mobile"
+              key={i}
+              onClick={() => setToggle(!toggle)}
+            >
+              <a
+                href={item.path}
+                className={`${
+                  item.path === window.location.hash ? "active" : ""
+                }`}
+              >
+                {item.name}
+              </a>
             </li>
           ))}
         </ul>

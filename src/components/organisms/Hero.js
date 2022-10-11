@@ -41,6 +41,20 @@ const Hero = () => {
     },
   ];
 
+  const handleCv = () => {
+    window.open(
+      "https://drive.google.com/file/d/1HRsrt5uMh4S-H-LCn6fL9fglDzPKplr0/view?usp=sharing",
+      "_blank"
+    );
+  };
+
+  const handleMorePortfolio = () => {
+    window.open(
+      "https://drive.google.com/file/d/12alsdOSwHcv9v3kEt-BFuYE_u1qeef-7/view?usp=sharing",
+      "_blank"
+    );
+  };
+
   return (
     <section className="hero" id="home">
       <div className="identity">
@@ -56,8 +70,10 @@ const Hero = () => {
             time especially in web technology and mobile apps.
           </p>
           <div className="button-wrapper">
-            <button className="more">More</button>
-            <button className="download-cv">
+            <button className="more" onClick={() => handleMorePortfolio()}>
+              More
+            </button>
+            <button className="download-cv" onClick={() => handleCv()}>
               Download cv
               <img src={DownloadCv} alt="download-cv" />
             </button>
