@@ -7,8 +7,6 @@ const NavItemDekstop = (props) => {
     items.map((item) => item.id),
     250
   );
-
-  console.log(activeId);
   return (
     <div className="nav-menu-dekstop">
       {items?.map((item, i) => (
