@@ -58,7 +58,7 @@ const Hero = () => {
   return (
     <section className="hero" id="home">
       <div className="identity">
-        <h2>Hello 👋, I`am </h2>
+        <h2>Hello 👋, Iam </h2>
         <div className="job-desk">
           <h1>Muhamad Firly Ramadan</h1>
           <span>Back End Developer</span>

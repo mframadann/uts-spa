@@ -198,7 +198,7 @@ const Projects = () => {
           icons={icons[0].whatsapp_clone}
           alt="images"
           title="Whatsapp UI clone"
-          description="Personal portfolio website to inform a short information about my self, created by muhamad firly ramadan with technologies reactjs and css native "
+          description="Whatsapp version dekstop UI clone, created by muhamad firly ramadan with technologies tailwindcss, react.js and figma for UI design."
           link="https://whatsapp-clone-mframadann.vercel.app"
         />
         <CardProject

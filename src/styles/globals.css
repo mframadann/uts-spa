@@ -611,7 +611,7 @@
   color: #262626;
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 870px) {
   .navbar {
     /* padding: 0.5rem 1rem 0.5rem 1rem; */
     width: 100%;
@@ -629,7 +629,7 @@
   }
 
   .nav-menu-wrapper img:nth-child(2) {
-    display: flex;
+    display: flex !important;
   }
 
   .nav-menu-dekstop {
@@ -810,7 +810,7 @@
     width: 100%;
     height: auto;
     box-sizing: border-box;
-    padding: 1rem;
+    padding: 4rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -821,48 +821,6 @@
     width: 100%;
     max-width: fit-content;
     flex: none;
-  }
-
-  .contack-section {
-    width: 100%;
-    height: auto;
-    box-sizing: border-box;
-    padding: 1rem;
-  }
-
-  .contack-section h1 {
-    font-size: 30pt;
-  }
-
-  .contack-wrapper {
-    width: 100%;
-  }
-
-  .identity-section {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-    flex-direction: column;
-  }
-
-  .identity-section input::placeholder,
-  .message-section textarea::placeholder {
-    font-size: 16px;
-  }
-
-  .send-message {
-    width: 100%;
-  }
-
-  .message-section textarea {
-    height: 200px;
-  }
-
-  .identity-section input,
-  .message-section textarea {
-    width: 300px;
   }
 
   .footer {
@@ -916,5 +874,78 @@
   .text-footer-image-box {
     font-size: 12px;
     width: 100%;
+  }
+
+  .contack-wrapper {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    flex-direction: column !important;
+    width: 100%;
+    height: auto;
+  }
+
+  .identity-section {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .contack-section {
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+  }
+
+  .contack-section h1 {
+    font-size: 30pt;
+  }
+
+  .contack-wrapper {
+    width: 100%;
+  }
+
+  .identity-section {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-direction: column;
+  }
+
+  .identity-section input::placeholder,
+  .message-section textarea::placeholder {
+    font-size: 16px;
+  }
+
+  .send-message {
+    width: 100%;
+  }
+
+  .message-section textarea {
+    height: 200px;
+  }
+
+  .identity-section input,
+  .message-section textarea {
+    width: 300px;
+  }
+
+  .projects-contain {
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .projects-card {
+    width: 100%;
+    max-width: fit-content;
+    flex: none;
   }
 }

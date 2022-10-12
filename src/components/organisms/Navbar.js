@@ -42,7 +42,7 @@ const Navbar = () => {
       ref: projectsref,
     },
     {
-      name: "Contack",
+      name: "Contact",
       id: "contack",
       ref: contackref,
     },
@@ -59,6 +59,7 @@ const Navbar = () => {
             height="30"
             alt="hamburger-menu"
             onClick={() => setToggle(!toggle)}
+            className="hamburger"
           />
           <NavItemDekstop items={items} handleScroll={handleScroll} />
         </div>
