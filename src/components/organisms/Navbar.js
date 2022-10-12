@@ -1,31 +1,50 @@
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { Hamburger, Logo } from "../../assets/svg";
 import { NavItemDekstop, NavItemMobile } from "../moleculs";
 
 const Navbar = () => {
-  const [isActive, setIsActive] = useState("#home");
   const [toggle, setToggle] = useState(false);
+
+  const homeref = useRef();
+  const aboutref = useRef();
+  const projectsref = useRef();
+  const skillsref = useRef();
+  const contackref = useRef();
+
+  const handleScroll = (ref) => {
+    typeof window != "undefined" &&
+      window.scrollTo({
+        top: ref?.offsetTop - 50,
+        left: 0,
+        behavior: "smooth",
+      });
+  };
 
   const items = [
     {
       name: "Home",
-      path: "#home",
+      id: "home",
+      ref: homeref,
     },
     {
       name: "About",
-      path: "#about",
+      id: "about",
+      ref: aboutref,
     },
     {
       name: "Skills",
-      path: "#skills",
+      id: "skills",
+      ref: skillsref,
     },
     {
       name: "Projects",
-      path: "#projects",
+      id: "projects",
+      ref: projectsref,
     },
     {
       name: "Contack",
-      path: "#contack",
+      id: "contack",
+      ref: contackref,
     },
   ];
 
@@ -41,14 +60,15 @@ const Navbar = () => {
             alt="hamburger-menu"
             onClick={() => setToggle(!toggle)}
           />
-          <NavItemDekstop
-            items={items}
-            isActive={isActive}
-            setIsActive={setIsActive}
-          />
+          <NavItemDekstop items={items} handleScroll={handleScroll} />
         </div>
       </nav>
-      <NavItemMobile toggle={toggle} setToggle={setToggle} items={items} />
+      <NavItemMobile
+        items={items}
+        toggle={toggle}
+        setToggle={setToggle}
+        handleScroll={handleScroll}
+      />
     </>
   );
 };
