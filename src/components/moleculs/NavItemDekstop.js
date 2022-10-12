@@ -1,17 +1,22 @@
-import React from "react";
+import { useScrollspy } from "../../helpers/HandleScroll";
 
 const NavItemDekstop = (props) => {
-  const { items, isActive, setIsActive } = props;
+  const { items, handleScroll } = props;
+
+  const activeId = useScrollspy(
+    items.map((item) => item.id),
+    250
+  );
+
+  console.log(activeId);
   return (
     <div className="nav-menu-dekstop">
       {items?.map((item, i) => (
         <a
-          href={item.path}
+          href={`#${item.id}`}
           key={i}
-          className={`${
-            isActive === item.path ? "active" : ""
-          } nav-link-dekstop`}
-          onClick={() => setIsActive(item.path)}
+          className={`${activeId === item.id ? "active" : ""} nav-link-dekstop`}
+          onClick={() => handleScroll(item.ref.current)}
         >
           {item.name}
         </a>

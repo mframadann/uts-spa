@@ -1,7 +1,14 @@
 import { CloseMenu, Logo } from "../../assets/svg";
+import { useScrollspy } from "../../helpers/HandleScroll";
 
 const NavItemMobile = (props) => {
-  const { toggle, setToggle, items } = props;
+  const { toggle, setToggle, items, handleScroll } = props;
+
+  const activeId = useScrollspy(
+    items.map((item) => item.id),
+    250
+  );
+
   return (
     <div
       className={`${toggle ? "translate-x-0" : "translate-x-full"} nav-mobile`}
@@ -22,13 +29,14 @@ const NavItemMobile = (props) => {
             <li
               className="nav-mmenu-mobile"
               key={i}
-              onClick={() => setToggle(!toggle)}
+              onClick={() => {
+                setToggle(!toggle);
+                handleScroll(item.ref.current);
+              }}
             >
               <a
-                href={item.path}
-                className={`${
-                  item.path === window.location.hash ? "active" : ""
-                }`}
+                href={`#${item.id}`}
+                className={`${item.id === activeId ? "active" : ""}`}
               >
                 {item.name}
               </a>
