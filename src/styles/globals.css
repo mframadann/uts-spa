@@ -562,10 +562,6 @@
   z-index: 60;
   transition: all;
   transition-duration: 500ms;
-  -webkit-transition: all;
-  -moz-transition: all;
-  -ms-transition: all;
-  -o-transition: all;
 }
 
 .nav-head {
@@ -579,20 +575,12 @@
   transition: all;
   transition-duration: 500ms;
   transform: translateX(100%);
-  -webkit-transform: translateX(100%);
-  -moz-transform: translateX(100%);
-  -ms-transform: translateX(100%);
-  -o-transform: translateX(100%);
 }
 
 .translate-x-0 {
   transition: all;
   transition-duration: 500ms;
   transform: translateX(0);
-  -webkit-transform: translateX(0);
-  -moz-transform: translateX(0);
-  -ms-transform: translateX(0);
-  -o-transform: translateX(0);
 }
 
 .links-wrap ul {
