@@ -847,6 +847,11 @@
     flex-direction: column;
   }
 
+  .identity-section input::placeholder,
+  .message-section textarea::placeholder {
+    font-size: 16px;
+  }
+
   .send-message {
     width: 100%;
   }
