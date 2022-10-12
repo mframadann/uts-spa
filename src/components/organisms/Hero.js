@@ -1,7 +1,7 @@
 import React from "react";
 import {
   DownloadCv,
-  Golang,
+  Figma,
   HeroImage,
   MongoDB,
   Nextjs,
@@ -33,11 +33,11 @@ const Hero = () => {
       image: Nodejs,
     },
     {
-      title: "Golang",
+      title: "Figma",
       isIcon: false,
-      alt: "golang",
+      alt: "figma",
       position: "golang",
-      image: Golang,
+      image: Figma,
     },
   ];
 
