@@ -82,7 +82,7 @@
 }
 
 .projects-card {
-  width: 318pt;
+  width: 19.875rem;
   height: 385px;
   border-radius: 16px 16px 0 0;
   overflow-y: hidden;
@@ -130,6 +130,8 @@
   max-width: 72rem;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
   gap: 6rem;
 }
 
@@ -141,10 +143,9 @@
 .projects-contain {
   width: 100%;
   max-width: 72rem;
-  display: flex;
-  justify-content: center;
-  gap: 50px 5rem;
-  align-items: center;
+  gap: 4rem;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 .tech-stack-label {
