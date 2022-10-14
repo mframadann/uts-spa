@@ -209,8 +209,6 @@ const Projects = () => {
           description="Rest application programming interfaces (API) services used from handling request from the client in alphadev blogs pages. created by muhamad firly ramadan  "
           link="https://blogs.alphadev.biz.id"
         />
-      </div>
-      <div className="projects-contain">
         <CardProject
           image={TodoList}
           icons={icons[0].todo_app}
@@ -236,8 +234,6 @@ const Projects = () => {
           description="Social links website, created by muhamad firly ramadan with technologies tailwindcss, react.js, and figma for UI design and react-particles library for moleculs effect."
           link="https://mframadann.vercel.app"
         />
-      </div>
-      <div className="projects-contain">
         <CardProject
           image={AdcomServer}
           icons={icons[0].adcom_server}
@@ -262,8 +258,6 @@ const Projects = () => {
           description="Remake android developer comunity cirebon from static site to dynamic websites, created with technologies nodejs, expressjs, mongoDB and ejs view engine. "
           link="https://adcom-staging.herokuapp.com"
         />
-      </div>
-      <div className="projects-contain">
         <CardProject
           image={AlphadevCms}
           icons={icons[0].adcom_server}
